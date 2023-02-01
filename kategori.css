@@ -1,0 +1,24 @@
+.kategori {
+  padding: 3%;
+}
+
+.kategori a {
+  text-decoration: none;
+  padding: 2em;
+  background-color: rgb(18, 54, 51);
+}
+
+h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2.441rem;
+  letter-spacing: -0.12rem;
+  line-height: 1.2;
+  color: white;
+}
+
+.kategori-wrapper {
+  max-width: 72rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10%;
+}

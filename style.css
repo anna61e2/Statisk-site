@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: calc(18px + ((100vw - 600px) / 250));
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*************MENU******************/
+header {
+  padding: 1rem 2rem;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 2rem;
+  padding: 0;
+  padding-bottom: 0.4rem;
+  gap: 30px;
+  overflow-x: auto;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+}
+
+a:hover {
+  background-color: rgb(18, 54, 51);
+  border-radius: 30px;
+}
+
+.forside {
+  background-image: url(forside.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*************Kategori******************/
+
+.productlist-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2%;
+  padding: 1%;
+}
+
+.productlist {
+  padding: 3%;
+}
+
+h3 {
+  font-size: 128%;
+  margin-top: 10%;
+}
+
+p {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.price {
+  display: none;
+}
+
+.brand {
+  color: beige;
+}
+
+.discount {
+  background-color: red;
+}
+
+@media (max-width: 1050px) {
+  .productlist-wrapper {
+    flex-direction: column;
+    gap: 70px;
+  }
+}
+
+.produkt-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.produkt-wrapper1 {
+  order: 1;
+  display: grid;
+  padding: 150px;
+  justify-content: center;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+}
+
+.produkt select {
+  min-width: 100px;
+  color: black;
+}
+
+.purchaseBox {
+  background: #d8d8d8;
+  color: var(--background-color);
+  padding: 1rem;
+}
+
+option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+
+dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.card-wrapper {
+  position: relative;
+}
+
+.discount {
+  position: absolute;
+  padding: 0, 3rem;
+  top: 5rem;
+  left: 8rem;
+}
+
+@media (min-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  img {
+    margin-top: 0;
+  }
+
+  .grid_1 {
+    order: 1;
+    display: grid;
+    padding: 150px;
+    justify-content: center;
+  }
+
+  .purchaseBox {
+    order: 2;
+    background: #d8d8d8;
+    color: var(--background-color);
+    padding: 1rem;
+  }
+
+  .overskrift {
+    order: 1;
+  }
+
+  .tekst {
+    order: 3;
+  }
+
+  .col {
+    padding: 20px;
+  }
+}
